@@ -28,6 +28,10 @@ public class DuckSimulator {
         Quackable mallardTwo = duckFactory.createMallardDuck();
         flockMallards.add(mallardOne);
         flockMallards.add(mallardTwo);
+
+        Quackologist quackologist = new Quackologist();
+        flock.registerObserver(quackologist);
+
         simlate(flock);
         simlate(flockMallards);
 //        simlate(mallardDuck);
